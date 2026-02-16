@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta - RecetaMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="d-inline-block align-text-top">
+                RecetaMaster
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="receta.html">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar receta...">
+                    <button class="btn btn-outline-success" type="button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-primary">Receta: Pasta al Pesto</h2>
+        <p>Una receta clásica italiana, rápida y deliciosa.</p>
+        
+        <ul class="nav nav-tabs mt-4" id="recipeTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="ing-tab" data-bs-toggle="tab" data-bs-target="#ingredientes" type="button" role="tab">Ingredientes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="prep-tab" data-bs-toggle="tab" data-bs-target="#preparacion" type="button" role="tab">Preparación</button>
+            </li>
+        </ul>
+        
+        <div class="tab-content border border-top-0 p-4 bg-white" id="recipeTabContent">
+            <div class="tab-pane fade show active" id="ingredientes" role="tabpanel">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingrediente</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Pasta Penne</td><td>500g</td></tr>
+                            <tr><td>Albahaca fresca</td><td>2 tazas</td></tr>
+                            <tr><td>Queso Parmesano</td><td>100g</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="preparacion" role="tabpanel">
+                <ol>
+                    <li>Cocina la pasta en agua con sal.</li>
+                    <li>Procesa la albahaca con aceite, ajo y piñones.</li>
+                    <li>Mezcla todo y disfruta.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
